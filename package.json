@@ -1,0 +1,38 @@
+{
+  "name": "eyenet-windows-agent",
+  "version": "2.0.0",
+  "description": "EyeNet Windows Agent",
+  "main": "main.js",
+  "bin": "main.js",
+  "pkg": {
+    "assets": [
+      "nodejs/**/*",
+      "node_modules/**/*"
+    ],
+    "targets": [ "node16-win-x64" ],
+    "outputPath": "dist"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --compress GZip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TadashiJei/EyeNet-Service-Windows.git"
+  },
+  "author": "EyeNet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TadashiJei/EyeNet-Service-Windows/issues"
+  },
+  "homepage": "https://github.com/TadashiJei/EyeNet-Service-Windows#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "os": "^0.1.1",
+    "os-service": "^2.1.3",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "systeminformation": "^3.45.9",
+    "url": "^0.11.0"
+  }
+}
